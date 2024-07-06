@@ -1,0 +1,26 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<main>
+			<h1>🧑‍🚀 Demo of Astro + Shaku!</h1>
+			<p>
+				Visit <a href="/blog/shaku">the blog</a> and check out how <a href="https://github.com/JSerZANP/shaku/tree/main/packages/shaku-code-annotate" target="_blank">shaku-code-annotate</a> helps render code blocks with dark mode support<br><br>
+
+				Edit "shaku.mdx" to update the contents.<br><br>
+
+				Check "global.css" to see the necessary styling.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
